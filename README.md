@@ -9,7 +9,7 @@
 
 ## 👨🏾‍🌾 About
 
-I'm **Yamkela Magayiyana** (also known as **Jaden Dev**) — a developer and agri-tech creator based in **KwaZulu-Natal, South Africa**. I blend a passion for crop farming and field work with a drive to build practical digital tools that make agriculture smarter.
+I'm **Yamkela Magayiyana** (also known as **Jaden Dev**) — a developer and agri-tech creator based in **Cape Town, South Africa**. I blend a passion for crop farming and field work with a drive to build practical digital tools that make agriculture smarter.
 
 From mobile field reporting systems and agro-logistics platforms, to chili product landing pages, farm logos and app development — I create end-to-end solutions that serve the people who grow our food.
 
