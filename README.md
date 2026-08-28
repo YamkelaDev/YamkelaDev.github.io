@@ -44,12 +44,19 @@ Visual identities and an app built for agricultural businesses in KwaZulu-Natal 
 
 ## 🛠 Built With
 
-- **HTML5 & CSS3** — no frameworks, pure hand-crafted code
-- **Spline** — interactive 3D scene embedded in the hero
-- **Unsplash** — real farm photography
+- **React 19 + TypeScript** — component-driven UI
+- **Three.js** via **@react-three/fiber** + **@react-three/drei** — the immersive hero PC that follows your cursor, the rotating globe, and the 3D monitor project showcase
+- **Tailwind CSS** — utility-first styling
+- **Vite** — build tooling
 - **Google Fonts** — Space Grotesk + Playfair Display
-- **Vanilla JavaScript** — scroll reveal, parallax, nav effects
-- **GitHub Pages** — free hosting
+- **GitHub Actions + GitHub Pages** — automatic build & deploy on every push to `main`
+
+### 3D model credits
+
+The desktop PC and planet models are real, licensed assets (not procedurally generated):
+
+- "Gaming Desktop PC" by [Yolala1232](https://sketchfab.com/Yolala1232) — [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+- "Stylized Planet" by [cmzw](https://sketchfab.com/cmzw) — [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ---
 
