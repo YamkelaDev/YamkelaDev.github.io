@@ -3,13 +3,13 @@
 **Live Site:** `https://YamkelaDev.github.io`
 
 > _"Building digital tools rooted in the soil."_  
-> Crop farming · Mobile reporting · Farm tech from KwaZulu-Natal, South Africa.
+> Crop farming · Mobile reporting · Farm tech from South Africa.
 
 ---
 
 ## 👨🏾‍🌾 About
 
-I'm **Yamkela Magayiyana** (also known as **Jaden Dev**) — a developer and agri-tech creator based in **Cape Town, South Africa**. I blend a passion for crop farming and field work with a drive to build practical digital tools that make agriculture smarter.
+I'm **Yamkela Magayiyana** (also known as **Jaden Dev**) — a developer and agri-tech creator from **South Africa**. I blend a passion for crop farming and field work with a drive to build practical digital tools that make agriculture smarter.
 
 From mobile field reporting systems and agro-logistics platforms, to chili product landing pages, farm logos and app development — I create end-to-end solutions that serve the people who grow our food.
 
@@ -38,7 +38,7 @@ Systematic tool for agricultural logistics and supply correlation — tracking f
 Fire-themed, conversion-focused marketing pages and animated posters for **Red Cayenne Chili Mash** and other agri-products.
 
 ### 4. Farm Brand Identities, Logos & App
-Visual identities and an app built for agricultural businesses in KwaZulu-Natal — covering print and digital brand presence end-to-end.
+Visual identities and an app built for agricultural businesses across South Africa — covering print and digital brand presence end-to-end.
 
 ---
 
@@ -77,4 +77,4 @@ This portfolio is open for viewing and inspiration. Please do not copy and redis
 
 ---
 
-_© 2026 Yamkela Magayiyana · Jaden Dev · KwaZulu-Natal, South Africa_
+_© 2026 Yamkela Magayiyana · Jaden Dev · South Africa_

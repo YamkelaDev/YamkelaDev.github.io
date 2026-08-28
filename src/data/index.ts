@@ -18,10 +18,10 @@ export const person = {
   name: "Yamkela Magayiyana",
   alias: "Jaden Dev",
   role: "Agri-Tech Developer",
-  location: "KwaZulu-Natal, South Africa",
+  location: "South Africa",
   tagline: "Building digital tools rooted in the soil.",
   bio: [
-    "I'm Yamkela Magayiyana — a developer and agri-tech creator from KwaZulu-Natal, South Africa. I blend a deep passion for crop farming and field work with a drive to build practical digital tools that make agriculture smarter.",
+    "I'm Yamkela Magayiyana — a developer and agri-tech creator from South Africa. I blend a deep passion for crop farming and field work with a drive to build practical digital tools that make agriculture smarter.",
     "From mobile field reporting systems and logistics workflows to chili product landing pages, farm logos and app development — I create end-to-end solutions that serve the people who grow our food.",
     "Currently growing my skills in AI Automation and Cyber Security. I specialise in Flutter, Python, JavaScript and agri-data systems, while actively building real tools for real farms.",
   ],
@@ -38,7 +38,7 @@ export const stats = [
   { value: "10+", label: "Projects Built" },
   { value: "🌶", label: "Agri Products Branded" },
   { value: "📱", label: "Google Play App" },
-  { value: "KZN", label: "KwaZulu-Natal Based" },
+  { value: "🌍", label: "Open to Work Anywhere" },
   { value: "∞", label: "Ideas Growing" },
 ];
 
@@ -112,7 +112,7 @@ export const projects: Project[] = [
   {
     name: "Farm Logos, App & Brand Design",
     description:
-      "Visual identities, farm logos and an app built for agricultural businesses in KwaZulu-Natal — covering print and digital brand presence end-to-end.",
+      "Visual identities, farm logos and an app built for agricultural businesses across South Africa — covering print and digital brand presence end-to-end.",
     tags: ["Branding", "Logo Design", "App Dev"],
     link: person.github,
     linkLabel: "Branding Projects",
