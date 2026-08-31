@@ -1,12 +1,16 @@
 import css from "../assets/tech/css.png";
+import docker from "../assets/tech/docker.png";
 import figma from "../assets/tech/figma.png";
 import git from "../assets/tech/git.png";
 import html from "../assets/tech/html.png";
 import javascript from "../assets/tech/javascript.png";
+import mongodb from "../assets/tech/mongodb.png";
 import nodejs from "../assets/tech/nodejs.png";
 import reactjs from "../assets/tech/reactjs.png";
+import redux from "../assets/tech/redux.png";
 import tailwind from "../assets/tech/tailwind.png";
 import threejs from "../assets/tech/threejs.svg";
+import typescript from "../assets/tech/typescript.png";
 
 export const navLinks = [
   { id: "about", title: "About" },
@@ -17,13 +21,15 @@ export const navLinks = [
 export const person = {
   name: "Yamkela Magayiyana",
   alias: "Jaden Dev",
-  role: "Agri-Tech Developer",
+  role: "Full-Stack Developer · CIO & Founder",
   location: "South Africa",
+  city: "Cape Town, South Africa",
   tagline: "Building digital tools rooted in the soil.",
   bio: [
-    "I'm Yamkela Magayiyana — a developer and agri-tech creator from South Africa. I blend a deep passion for crop farming and field work with a drive to build practical digital tools that make agriculture smarter.",
-    "From mobile field reporting systems and logistics workflows to chili product landing pages, farm logos and app development — I create end-to-end solutions that serve the people who grow our food.",
-    "Currently growing my skills in AI Automation and Cyber Security. I specialise in Flutter, Python, JavaScript and agri-data systems, while actively building real tools for real farms.",
+    "I'm Yamkela Jaden — a Chief Information Officer, founder, and full-stack developer driven by the belief that technology can transform communities and industries.",
+    "My journey began with a foundation in Accounting Science, Plant Production, and Food Safety (HACCP), which gave me a unique perspective on how systems, compliance, and sustainability intersect. Over time, I expanded into software development, cybersecurity, and digital innovation, building solutions that bridge agriculture, health advocacy, and technology.",
+    "From mobile field reporting systems and agro-logistics platforms to chili product landing pages, farm logos and app development — I create end-to-end solutions that serve the people who grow our food.",
+    "I specialise in Flutter, Python, JavaScript, React and agri-data systems, and I'm currently deepening my skills in AI Automation and Cyber Security — while actively building real tools for real farms and real communities.",
   ],
   email: "magayiyanayamkelainnocent@gmail.com",
   phone: "+27623176893",
@@ -43,6 +49,11 @@ export const stats = [
 ];
 
 export const skills = [
+  "Full-Stack Development",
+  "CIO Leadership",
+  "Founder",
+  "Cybersecurity",
+  "Digital Innovation",
   "Field Reporting",
   "Agro-Logistics",
   "Farm Branding",
@@ -54,12 +65,22 @@ export const skills = [
   "Python",
 ];
 
+export const credentials = [
+  "Accounting Science",
+  "Plant Production",
+  "Food Safety (HACCP)",
+];
+
 export const technologies = [
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
   { name: "JavaScript", icon: javascript },
+  { name: "TypeScript", icon: typescript },
   { name: "React JS", icon: reactjs },
   { name: "Node JS", icon: nodejs },
+  { name: "MongoDB", icon: mongodb },
+  { name: "Redux", icon: redux },
+  { name: "Docker", icon: docker },
   { name: "Tailwind CSS", icon: tailwind },
   { name: "Git", icon: git },
   { name: "Figma", icon: figma },

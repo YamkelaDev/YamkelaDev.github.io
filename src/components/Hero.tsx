@@ -1,39 +1,67 @@
 import ComputersCanvas from "./canvas/Computers";
+import useReveal from "../hooks/useReveal";
 import { person, stats } from "../data";
 
 const Hero = () => {
-  return (
-    <section id="hero" className="relative flex min-h-screen w-full flex-col overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 bg-hero-glow" />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-dark via-transparent to-dark" />
+  const welcomeRef = useReveal<HTMLDivElement>();
 
-      <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-1 flex-col gap-6 px-6 pt-32 sm:px-14 sm:pt-40 lg:flex-row lg:items-center lg:gap-4">
-        <div className="max-w-xl lg:flex-1">
-          <div className="mb-6 inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[5px] text-gold">
-            <span className="h-px w-8 bg-gold" />
-            {person.role} · {person.location}
+  return (
+    <>
+      {/* full-screen 3D landing — the first thing you see */}
+      <section id="hero" className="relative h-screen w-full overflow-hidden">
+        <div className="absolute inset-0">
+          <ComputersCanvas />
+        </div>
+
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-dark/70 via-transparent to-dark" />
+
+        <div className="pointer-events-none absolute left-6 top-28 sm:left-14 sm:top-32">
+          <div className="flex items-center gap-2.5 text-[11px] uppercase tracking-[5px] text-accent">
+            <span className="h-px w-8 bg-accent" />
+            {person.role}
           </div>
-          <h1 className="font-display text-[44px] font-bold leading-[1.05] text-white drop-shadow-[0_2px_40px_rgba(0,0,0,0.5)] sm:text-[64px] lg:text-[76px]">
+          <div className="mt-2 text-[10px] uppercase tracking-[3px] text-white/40">
+            {person.location}
+          </div>
+        </div>
+
+        <p className="pointer-events-none absolute bottom-24 left-1/2 -translate-x-1/2 text-center text-[10px] uppercase tracking-[2px] text-white/30 sm:bottom-28">
+          move your mouse
+        </p>
+
+        <a
+          href="#welcome"
+          className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-white/40 transition-colors hover:text-accent"
+          aria-label="Scroll down"
+        >
+          <span className="text-[10px] uppercase tracking-[4px]">Scroll</span>
+          <span className="h-10 w-px bg-gradient-to-b from-accent to-transparent" />
+        </a>
+      </section>
+
+      {/* welcome / intro copy — revealed once you scroll past the 3D scene */}
+      <section id="welcome" className="relative px-6 pb-6 pt-24 sm:px-14 sm:pt-32">
+        <div ref={welcomeRef} className="reveal mx-auto max-w-3xl text-center">
+          <h1 className="font-display text-[36px] font-bold leading-[1.08] text-white sm:text-[54px] lg:text-[64px]">
             Welcome, I'm
-            <span className="block text-gradient-gold">
-              Yamkela
-              <br />
-              Magayiyana
+            <span className="block text-gradient-accent">
+              Yamkela Magayiyana
             </span>
-            <span className="mt-1 block text-[0.55em] font-normal italic text-white/85">
+            <span className="mt-1 block text-[0.5em] font-normal italic text-white/85">
               — aka {person.alias}
             </span>
           </h1>
-          <p className="mt-7 max-w-md text-[16px] leading-[1.75] text-white/60">
-            Building <strong className="font-medium text-white/90">digital tools rooted in the soil</strong> —
-            from mobile field reporting systems and agro-logistics platforms to
-            farm branding, chili product pages, and everything in between.
+          <p className="mx-auto mt-7 max-w-xl text-[16px] leading-[1.75] text-white/60">
+            A <strong className="font-medium text-white/90">Chief Information Officer, founder and full-stack developer</strong> —
+            building digital tools that bridge agriculture, health advocacy and
+            technology, from mobile field reporting systems to the very site
+            you're looking at.
           </p>
 
-          <div className="mt-9 flex flex-wrap gap-4">
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 text-[13px] font-bold tracking-wide text-black transition-all hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-[0_8px_30px_rgba(201,151,43,0.35)]"
+              className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-[13px] font-bold tracking-wide text-black transition-all hover:-translate-y-0.5 hover:bg-accent-light hover:shadow-[0_8px_30px_rgba(145,94,255,0.4)]"
             >
               View My Work
             </a>
@@ -41,7 +69,7 @@ const Hero = () => {
               href={person.googlePlay}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 text-[13px] font-bold tracking-wide text-black transition-all hover:-translate-y-0.5 hover:bg-gold-light"
+              className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-[13px] font-bold tracking-wide text-black transition-all hover:-translate-y-0.5 hover:bg-accent-light"
             >
               📱 Download Chilli Grower App
             </a>
@@ -49,35 +77,28 @@ const Hero = () => {
               href={person.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-7 py-3.5 text-[13px] font-semibold tracking-wide text-white/80 transition-all hover:-translate-y-0.5 hover:border-gold/50 hover:text-gold"
+              className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-7 py-3.5 text-[13px] font-semibold tracking-wide text-white/80 transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent"
             >
               GitHub Profile →
             </a>
           </div>
         </div>
 
-        <div className="relative h-[340px] w-full shrink-0 sm:h-[440px] lg:h-[560px] lg:flex-1">
-          <ComputersCanvas />
-          <p className="pointer-events-none absolute bottom-2 left-1/2 -translate-x-1/2 text-center text-[10px] uppercase tracking-[2px] text-white/25">
-            move your mouse
-          </p>
+        <div className="relative z-10 mx-auto mt-16 grid max-w-[1160px] grid-cols-2 rounded-2xl border border-white/[0.07] bg-dark-3/60 backdrop-blur-md sm:grid-cols-5">
+          {stats.map((s, i) => (
+            <div
+              key={s.label}
+              className={`border-white/[0.07] px-6 py-5 sm:border-r sm:last:border-r-0 ${
+                i % 2 === 0 ? "border-r" : ""
+              }`}
+            >
+              <div className="text-[26px] font-bold leading-none text-accent">{s.value}</div>
+              <div className="mt-1.5 text-[11px] tracking-wide text-white/55">{s.label}</div>
+            </div>
+          ))}
         </div>
-      </div>
-
-      <div className="relative z-10 mt-8 grid grid-cols-2 border-t border-white/[0.07] bg-dark/85 backdrop-blur-md sm:grid-cols-5">
-        {stats.map((s, i) => (
-          <div
-            key={s.label}
-            className={`border-white/[0.07] px-6 py-5 sm:border-r sm:last:border-r-0 ${
-              i % 2 === 0 ? "border-r" : ""
-            }`}
-          >
-            <div className="text-[26px] font-bold leading-none text-gold">{s.value}</div>
-            <div className="mt-1.5 text-[11px] tracking-wide text-white/55">{s.label}</div>
-          </div>
-        ))}
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

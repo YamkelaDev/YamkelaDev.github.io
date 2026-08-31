@@ -28,7 +28,7 @@ const ProjectScreen = ({ index }: { index: number }) => {
         </h3>
         <p className="mt-2.5 text-[12.5px] leading-[1.65] text-white/55">{p.description}</p>
       </div>
-      <div className="mt-4 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-wide text-gold">
+      <div className="mt-4 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-wide text-accent">
         {p.linkLabel} ↗
       </div>
     </a>
@@ -47,18 +47,18 @@ const Works = () => {
       <div className="mx-auto max-w-[1240px]">
         <div ref={ref} className="reveal mb-14 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
           <div>
-            <div className="mb-3.5 flex items-center gap-3 text-[10px] uppercase tracking-[6px] text-gold">
+            <div className="mb-3.5 flex items-center gap-3 text-[10px] uppercase tracking-[6px] text-accent">
               Portfolio
             </div>
             <h2 className="font-display text-[32px] font-bold leading-[1.12] text-white sm:text-[46px]">
-              Work from <em className="italic text-gold">the field</em>
+              Work from <em className="italic text-accent">the field</em>
             </h2>
           </div>
           <a
             href="https://github.com/YamkelaDev"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 text-[12px] uppercase tracking-[2px] text-gold hover:gap-3.5"
+            className="flex items-center gap-2 text-[12px] uppercase tracking-[2px] text-accent hover:gap-3.5"
           >
             All Repositories ↗
           </a>
@@ -75,7 +75,7 @@ const Works = () => {
           <button
             onClick={() => go(-1)}
             aria-label="Previous project"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-gold/50 hover:text-gold"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-accent/50 hover:text-accent"
           >
             ←
           </button>
@@ -86,7 +86,7 @@ const Works = () => {
                 onClick={() => setActive(i)}
                 aria-label={`Show ${p.name}`}
                 className={`h-1.5 rounded-full transition-all ${
-                  i === active ? "w-6 bg-gold" : "w-1.5 bg-white/20"
+                  i === active ? "w-6 bg-accent" : "w-1.5 bg-white/20"
                 }`}
               />
             ))}
@@ -94,7 +94,7 @@ const Works = () => {
           <button
             onClick={() => go(1)}
             aria-label="Next project"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-gold/50 hover:text-gold"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-accent/50 hover:text-accent"
           >
             →
           </button>
@@ -111,8 +111,8 @@ const Works = () => {
               }}
               className={`rounded-xl border p-5 text-left transition-colors ${
                 i === active
-                  ? "border-gold/40 bg-gold/[0.05]"
-                  : "border-white/[0.07] bg-dark-3 hover:border-gold/25"
+                  ? "border-accent/40 bg-accent/[0.05]"
+                  : "border-white/[0.07] bg-dark-3 hover:border-accent/25"
               }`}
             >
               <div className="mb-2 flex flex-wrap gap-1.5">

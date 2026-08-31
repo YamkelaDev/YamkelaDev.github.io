@@ -24,7 +24,7 @@ const Navbar = () => {
           scrolled ? "bg-dark/90 backdrop-blur-md border-b border-white/[0.07]" : ""
         }`}
       >
-        <a href="#hero" className="text-[13px] font-bold uppercase tracking-[3px] text-gold">
+        <a href="#hero" className="text-[13px] font-bold uppercase tracking-[3px] text-accent">
           {person.alias}
         </a>
 
@@ -33,7 +33,7 @@ const Navbar = () => {
             <li key={link.id}>
               <a
                 href={`#${link.id}`}
-                className="text-[12px] uppercase tracking-[1.5px] text-white/50 transition-colors hover:text-gold"
+                className="text-[12px] uppercase tracking-[1.5px] text-white/50 transition-colors hover:text-accent"
               >
                 {link.title}
               </a>
@@ -45,7 +45,7 @@ const Navbar = () => {
           href={person.github}
           target="_blank"
           rel="noreferrer"
-          className="hidden rounded-md border border-gold/40 px-5 py-2 text-[12px] uppercase tracking-wide text-gold transition-colors hover:bg-gold hover:text-black sm:inline-block"
+          className="hidden rounded-md border border-accent/40 px-5 py-2 text-[12px] uppercase tracking-wide text-accent transition-colors hover:bg-accent hover:text-black sm:inline-block"
         >
           GitHub ↗
         </a>
@@ -79,7 +79,7 @@ const Navbar = () => {
             key={link.id}
             href={`#${link.id}`}
             onClick={() => setOpen(false)}
-            className="text-[15px] uppercase tracking-wide text-white/70 hover:text-gold"
+            className="text-[15px] uppercase tracking-wide text-white/70 hover:text-accent"
           >
             {link.title}
           </a>
@@ -88,7 +88,7 @@ const Navbar = () => {
           href={person.github}
           target="_blank"
           rel="noreferrer"
-          className="mt-2 inline-block rounded-md border border-gold/40 px-5 py-2 text-center text-[12px] uppercase tracking-wide text-gold"
+          className="mt-2 inline-block rounded-md border border-accent/40 px-5 py-2 text-center text-[12px] uppercase tracking-wide text-accent"
         >
           GitHub ↗
         </a>

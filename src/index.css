@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
-  background: #080c10;
+  background: #050816;
   color: #e8e8e8;
   overflow-x: hidden;
 }
@@ -28,16 +28,16 @@ body {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #080c10;
+  background: #050816;
 }
 ::-webkit-scrollbar-thumb {
-  background: #c9972b;
+  background: #915eff;
   border-radius: 2px;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #c9972b;
+  outline: 2px solid #915eff;
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -57,8 +57,8 @@ button:focus-visible {
   transform: translateY(0);
 }
 
-.text-gradient-gold {
-  background: linear-gradient(135deg, #c9972b 0%, #e8b84b 45%, #c9972b 100%);
+.text-gradient-accent {
+  background: linear-gradient(135deg, #915eff 0%, #00d3f2 55%, #b99cff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

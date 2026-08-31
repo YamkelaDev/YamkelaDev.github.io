@@ -10,13 +10,13 @@ const Footer = () => {
           © {year} {person.name} · {person.alias} · {person.location}
         </span>
         <div className="flex gap-2">
-          <span className="h-1.5 w-1.5 rounded-full bg-gold/30" />
-          <span className="h-1.5 w-1.5 rounded-full bg-gold/60" />
-          <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+          <span className="h-1.5 w-1.5 rounded-full bg-accent/30" />
+          <span className="h-1.5 w-1.5 rounded-full bg-accent/60" />
+          <span className="h-1.5 w-1.5 rounded-full bg-accent" />
         </div>
         <span className="text-[12px] text-white/30">
           Built with ❤️ ·{" "}
-          <a href={person.github} target="_blank" rel="noreferrer" className="text-gold no-underline">
+          <a href={person.github} target="_blank" rel="noreferrer" className="text-accent no-underline">
             GitHub ↗
           </a>
         </span>

@@ -16,9 +16,9 @@ const PlanetModel = () => {
 
   return (
     <group ref={group}>
-      <hemisphereLight intensity={0.4} groundColor="#0e1318" />
-      <directionalLight position={[3, 4, 3]} intensity={1.1} color="#e8b84b" />
-      <pointLight position={[-3, -2, -3]} intensity={0.4} color="#4a9e30" />
+      <hemisphereLight intensity={0.4} groundColor="#151030" />
+      <directionalLight position={[3, 4, 3]} intensity={1.1} color="#b99cff" />
+      <pointLight position={[-3, -2, -3]} intensity={0.4} color="#00d3f2" />
       <primitive object={planet.scene} scale={1.9} position={[0, 0, 0]} />
     </group>
   );

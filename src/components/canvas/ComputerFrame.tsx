@@ -26,22 +26,22 @@ const Monitor = ({ children }: ComputerFrameProps) => {
 
   return (
     <group ref={group}>
-      <hemisphereLight intensity={0.35} groundColor="#0e1318" />
-      <pointLight position={[2, 3, 3]} intensity={1.3} color="#e8b84b" />
-      <pointLight position={[-3, -1, -2]} intensity={0.5} color="#4a9e30" />
+      <hemisphereLight intensity={0.35} groundColor="#151030" />
+      <pointLight position={[2, 3, 3]} intensity={1.3} color="#00d3f2" />
+      <pointLight position={[-3, -1, -2]} intensity={0.5} color="#915eff" />
 
       {/* monitor bezel */}
       <mesh position={[0, 0.55, 0]} castShadow receiveShadow>
         <boxGeometry args={[3.6, 2.1, 0.12]} />
-        <meshStandardMaterial color="#141b20" roughness={0.4} metalness={0.3} />
+        <meshStandardMaterial color="#171233" roughness={0.4} metalness={0.3} />
       </mesh>
 
       {/* screen (emissive frame, Html rendered on top) */}
       <mesh ref={screen} position={[0, 0.55, 0.07]}>
         <planeGeometry args={[3.32, 1.84]} />
         <meshStandardMaterial
-          color="#080c10"
-          emissive="#0e1318"
+          color="#050816"
+          emissive="#151030"
           emissiveIntensity={0.6}
         />
       </mesh>
@@ -61,22 +61,22 @@ const Monitor = ({ children }: ComputerFrameProps) => {
       {/* stand neck */}
       <mesh position={[0, -0.75, -0.05]} castShadow>
         <boxGeometry args={[0.2, 0.9, 0.2]} />
-        <meshStandardMaterial color="#0e1318" roughness={0.5} metalness={0.4} />
+        <meshStandardMaterial color="#171233" roughness={0.5} metalness={0.4} />
       </mesh>
 
       {/* base */}
       <mesh position={[0, -1.22, -0.05]} castShadow receiveShadow>
         <boxGeometry args={[1.3, 0.08, 0.75]} />
-        <meshStandardMaterial color="#0e1318" roughness={0.5} metalness={0.4} />
+        <meshStandardMaterial color="#171233" roughness={0.5} metalness={0.4} />
       </mesh>
 
-      {/* subtle gold rim accent */}
+      {/* subtle accent rim */}
       <mesh position={[0, 0.55, -0.04]}>
         <boxGeometry args={[3.66, 2.16, 0.02]} />
         <meshStandardMaterial
-          color="#c9972b"
-          emissive="#c9972b"
-          emissiveIntensity={0.15}
+          color="#915eff"
+          emissive="#915eff"
+          emissiveIntensity={0.18}
           roughness={0.6}
         />
       </mesh>

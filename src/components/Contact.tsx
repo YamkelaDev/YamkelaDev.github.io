@@ -49,13 +49,13 @@ const Contact = () => {
   return (
     <section id="contact" className="px-6 py-28 sm:px-14 lg:py-36">
       <div ref={ref} className="reveal mx-auto max-w-[720px]">
-        <div className="mb-3.5 flex items-center gap-3 text-[10px] uppercase tracking-[6px] text-gold">
+        <div className="mb-3.5 flex items-center gap-3 text-[10px] uppercase tracking-[6px] text-accent">
           Get in touch
         </div>
         <h2 className="font-display text-[32px] font-bold leading-[1.12] text-white sm:text-[46px]">
           Let's grow
           <br />
-          something <em className="italic text-gold">together</em>
+          something <em className="italic text-accent">together</em>
         </h2>
         <p className="mt-5 max-w-md text-[15px] leading-[1.8] text-white/55">
           Whether you need a farm website, a mobile field reporting tool,
@@ -70,9 +70,9 @@ const Contact = () => {
               href={l.href}
               target={l.external ? "_blank" : undefined}
               rel={l.external ? "noreferrer" : undefined}
-              className="flex min-w-0 items-center gap-4 rounded-xl border border-white/[0.07] bg-white/[0.02] px-5 py-4.5 transition-colors hover:border-gold/30 hover:bg-gold/[0.04]"
+              className="flex min-w-0 items-center gap-4 rounded-xl border border-white/[0.07] bg-white/[0.02] px-5 py-4.5 transition-colors hover:border-accent/30 hover:bg-accent/[0.04]"
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gold/10 text-gold">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
                 {l.icon}
               </div>
               <div className="min-w-0 flex-1">

@@ -4,18 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        gold: {
-          DEFAULT: "#c9972b",
-          light: "#e8b84b",
+        // primary accent — modern violet (was gold)
+        accent: {
+          DEFAULT: "#915EFF",
+          light: "#B99CFF",
         },
-        green: {
-          DEFAULT: "#2d6a1f",
-          light: "#4a9e30",
+        // secondary accent — electric cyan (was green)
+        accent2: {
+          DEFAULT: "#00D3F2",
+          light: "#64E8FF",
         },
         dark: {
-          DEFAULT: "#080c10",
-          2: "#0e1318",
-          3: "#141b20",
+          DEFAULT: "#050816",
+          2: "#0B0F1E",
+          3: "#151030",
         },
       },
       fontFamily: {
@@ -24,7 +26,7 @@ export default {
       },
       backgroundImage: {
         "hero-glow":
-          "radial-gradient(60% 50% at 50% 0%, rgba(201,151,43,0.18) 0%, rgba(8,12,16,0) 70%)",
+          "radial-gradient(60% 50% at 50% 0%, rgba(145,94,255,0.22) 0%, rgba(5,8,22,0) 70%)",
       },
     },
   },
